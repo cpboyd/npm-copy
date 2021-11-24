@@ -2,7 +2,7 @@
 
 process.title = 'npm-copy';
 
-var argv = require('minimist')(process.argv.slice(2));
+const argv = require('minimist')(process.argv.slice(2));
 require('../lib/cli')(argv, function(err) {
   if (err) {
     console.error(err.stack || err);
